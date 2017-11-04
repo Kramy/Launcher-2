@@ -8,3 +8,15 @@ app.on('ready', () => {
     })
     win.loadURL(`file://${__dirname}/index.html`)
 })
+
+exports.openWindow = (filename) => {
+    let win = new BrowserWindow({
+        width:400,
+        height: 200
+    })
+    win.loadURL(`file://${__dirname}/${filename}.html`)
+}
+
+exports.closeWindow = (window) => {
+    window.close()
+}
