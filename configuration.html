@@ -6,19 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Configuration</title>
     
-    <script src="./node_modules/angular/angular.js"></script>
-    <script src="./node_modules/angular-route/angular-route.js"></script>
+    <!-- <script src="./node_modules/angular/angular.js"></script>
+    <script src="./node_modules/angular-route/angular-route.js"></script> -->
 </head>
 <body>
     <h1>Options</h1>
-    <a href="#configuration-launcher">Launcher</a>
-    <a href="#configuration-applications">Applications</a>
+    <a href="#!configuration-launcher">Launcher</a>
+    <a href="#!configuration-application">Applications</a>
 
-    <div ng-view></div>
+    <ng-view></ng-view>         
 
-    <script>
-        require('./configuration-renderer.js');
-    </script>
     <script src="configuration.js"></script>
 </body>
 </html>
