@@ -1,23 +1,30 @@
 {
   "name": "launcher",
+  "productName": "Launcher",
   "version": "1.0.0",
   "description": "Application launcher.",
   "main": "main.js",
   "scripts": {
-    "start": "electron main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron .",
+    "package": "electron-packager . Launcher --overwrite --platform=win32 --arch=x64 --icon=icon.ico --out=packaged-builds"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kramy/Launcher.git"
   },
-  "author": "Rafael Benavides <rabenter@gmail.com>",
+  "author": "Rafael Benavides Terrón <rabenter@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Kramy/Launcher/issues"
   },
   "homepage": "https://github.com/Kramy/Launcher#readme",
   "dependencies": {
+    "angular": "^1.6.6",
+    "angular-route": "^1.6.6",
     "electron": "^1.7.9"
+  },
+  "devDependencies": {
+    "asar": "^0.14.0",
+    "electron-packager": "^9.1.0"
   }
 }
