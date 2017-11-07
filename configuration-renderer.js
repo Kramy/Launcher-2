@@ -12,5 +12,5 @@ app.config(($routeProvider) => {
         templateUrl: 'configuration-application.html'
     }).otherwise({
         redirectTo: '/'
-    })
+    });
 });

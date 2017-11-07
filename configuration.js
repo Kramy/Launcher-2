@@ -1,6 +1,6 @@
 const remote = require('electron').remote
 const main = remote.require('./main.js')
-require('./configuration-renderer.js');
+require('../configuration-renderer.js');
 
 var button = document.createElement('button')
 button.textContent = 'Close'
